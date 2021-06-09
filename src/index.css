@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 75px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+th {
+  white-space: nowrap;
+}
+
+td {
+  white-space: nowrap;
+}
+
+.clickable-icon {
+  border: none;
+  color: black;
+  text-align: center;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.clickable-icon:hover {
+  opacity: 1;
+}
+
+.clickable-icon:active {
+  transform: scale(0.85);
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+}
+
+.curved-border {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.report-create {
+  width: 100%;
+  max-width: 775px;
+  padding: 40px;
+}
+
+.signPadbtn {
+  width: 260px;
+  height: 130px;
+}
+
+.loginError {
+  background: #fae8e8;
+}
+
+.searchBar:focus {
+  border: 1px solid white !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  outline: none !important;
+}

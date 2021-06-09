@@ -1,0 +1,4 @@
+{
+    "apiUrl":"",
+    "userPriority":{ "superadmin": 100,"admin": 90, "manager": 80, "user": 70 }
+}

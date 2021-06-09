@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      $(document).ready(function () {
+          $(document).click(function (event) {
+              var click = $(event.target);
+              var _open = $(".navbar-collapse").hasClass("show");
+              if (_open === true && !click.hasClass("navbar-toggler")) {
+                  $(".navbar-toggler").click();
+              }
+          });
+      });
+  </script>
+
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/android-chrome-192x192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Digital Service Report</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
