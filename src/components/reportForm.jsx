@@ -26,7 +26,7 @@ class ReportForm extends Form {
       contactPerson: "",
       contactPersonEmail: "",
       telephone: "",
-      productVendorId: "",
+      productVendor: "",
       ticketNumber: "",
       actionTaken: "",
       remark: "",
@@ -85,7 +85,7 @@ class ReportForm extends Form {
     contactPerson: "",
     contactPersonEmail: "",
     telephone: "",
-    productVendorId: "",
+    productVendor: "",
     ticketNumber: "",
     actionTaken: "",
     remark: "",
@@ -124,7 +124,7 @@ class ReportForm extends Form {
       .label("Telephone"),
     chargeable: Joi.boolean(),
     jobCategory: Joi.string(),
-    productVendorId: JoiObjectId().required().label("Product Vendor"),
+    productVendor: JoiObjectId().required().label("Product Vendor"),
     ticketNumber: Joi.string()
       .pattern(/\d/)
       .max(8)
@@ -229,7 +229,7 @@ class ReportForm extends Form {
       contactPerson: report.contactPerson,
       contactPersonEmail: report.contactPersonEmail,
       telephone: report.telephone,
-      productVendorId: report.productVendor,
+      productVendor: report.productVendor,
       ticketNumber: report.ticketNumber,
       actionTaken: report.actionTaken,
       remark: report.remark,
@@ -335,7 +335,7 @@ class ReportForm extends Form {
         contactPerson: "",
         contactPersonEmail: "",
         telephone: "",
-        productVendorId: "",
+        productVendor: "",
         ticketNumber: "",
         actionTaken: "",
         remark: "",
@@ -499,7 +499,7 @@ class ReportForm extends Form {
           <div className="row">
             <div className="col-md-6 ">
               {this.renderSelect({
-                name: "productVendorId",
+                name: "productVendor",
                 label: "Product Vendor",
                 options: productVendors,
                 require: true,
