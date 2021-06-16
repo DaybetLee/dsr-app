@@ -1,4 +1,4 @@
-# dsr-api
+# dsr-app
 
 This is the front-end of the digital service report application developed as my final year project during my software engineering degree programme.
 The application aims to digitalize the process of service reporting, which usually are written on the physical copy by an on-site technician.
